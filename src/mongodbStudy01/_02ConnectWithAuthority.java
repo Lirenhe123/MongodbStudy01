@@ -15,6 +15,7 @@ public class _02ConnectWithAuthority {
 			List<ServerAddress> listOfServerAddress=new ArrayList<ServerAddress>();
 			listOfServerAddress.add(serverAddress);
 			
+			//权限验证好像需要在.bat启动文件中配置
 			MongoCredential credential=MongoCredential.
 					createScramSha1Credential("", "newdb", "".toCharArray());
 			
